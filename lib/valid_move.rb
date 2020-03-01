@@ -3,6 +3,7 @@ def valid_move?(board, index)
   if index.to_i > 8
     return false
   end
+  
   if !position_taken?(board, index)
     return true
   end
